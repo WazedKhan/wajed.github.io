@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wajed's Portfolio</title>
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section class="hero">
+      <div class="container">
         <div class="profile-pic">
-            <img src="./media/20190802_202656.jpg" alt="Abdul Wajed Khan">
+          <img id="profile-pic" src="" alt="Abdul Wajed Khan" />
         </div>
         <div class="hero-content">
-            <h1>Hello, I'm <span>Abdul Wajed Khan</span></h1>
-            <h2>Backend Developer</h2>
-            <div class="buttons">
-                <a href="#" class="btn">Download CV</a>
-                <a href="#" class="btn btn-primary">Contact Info</a>
-            </div>
-            <div class="social-icons">
-                <a href="#"><img src="https://via.placeholder.com/30" alt="LinkedIn"></a>
-                <a href="https://github.com/wazedKhan"><img src="https://via.placeholder.com/30" alt="GitHub"></a>
-            </div>
+            <h1>
+                Hi <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" alt="Hi" class="hi-gif" />
+                , I'm <span>Abdul&nbsp;Wajed&nbsp;Khan</span>
+              </h1>
+          <h2>Backend Developer</h2>
+          <p id="profile-bio">
+            Passionate about coding, building scalable systems, and solving
+            real-world problems using technology.
+          </p>
+          <div class="buttons">
+            <!-- <a href="#" class="btn">Download CV</a> -->
+            <a id="github-ref" href="https://github.com/WazedKhan" class="btn" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+            <!-- <a href="#" class="btn btn-primary">Contact Info</a> -->
+          </div>
+
+          <!-- <div class="social-icons">
+            <a href="#"><img src="https://via.placeholder.com/30" alt="LinkedIn" /></a>
+            <a href="https://github.com/wazedKhan"><img src="https://via.placeholder.com/30" alt="GitHub" /></a>
+          </div> -->
         </div>
+      </div>
     </section>
-</body>
+
+    <!-- JavaScript comes after the HTML -->
+    <script src="./js/index.js"></script>
+  </body>
 </html>
