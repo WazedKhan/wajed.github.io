@@ -7,3 +7,19 @@ fetch('https://api.github.com/users/wazedkhan')
     .catch(error=> {
         console.log('Error fetching GitHub data:', error);
     });
+
+// This function will be called every 2 minutes
+function requestEveryTwoMinutes() {
+    fetch('https://wajedkhan.onrender.com/')
+        .then(response => response.json())
+        .then(data => {
+            console.log('Data from another API:', data);
+        })
+        .catch(error => {
+            console.log('Error fetching another API:', error);
+        });
+}
+
+
+// Set interval for the second function to run every 2 minutes
+setInterval(requestEveryTwoMinutes, 120000);
